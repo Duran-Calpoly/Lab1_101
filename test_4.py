@@ -16,7 +16,7 @@ class TestLab1_4(unittest.TestCase):
     # Tests for add_tax
     def test_tax_calculation(self):
         """Test that 10% tax is added correctly to $100."""
-        self.assertEqual(add_tax(100), 110.0)
+        self.assertAlmostEqual(add_tax(100), 110.0)
 
     def test_tax_small_amount(self):
         """Test tax on a smaller amount."""

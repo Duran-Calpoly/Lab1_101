@@ -11,13 +11,61 @@ Welcome to your first lab! This week is focused on setting up your development e
 
 ### Day 3: Infrastructure Setup (Monday, 1/12)
 
+
 **Goal:** Get your coding environment (GitHub Codespaces) ready.
 
-1. **GitHub Account:** Create a [GitHub account](https://github.com) if you don't have one.
-2. **Join Classroom:** Click the [INSERT_LINK] provided by your instructor.
-3. **Launch Codespaces:** Inside your new repo, click **Code** (green button) → **Codespaces** → **Create codespace**.
-4. **Coding Task:** Open `lab1_3.py` and create a function named `add(x, y)` that returns the sum of two numbers.
-5. **Verify:** Run `python3 test_3.py` in the terminal.
+1. **GitHub Account:** Create a [GitHub account](https://github.com) if you do not have one. Please use a professional username.
+2. **Join Classroom:** Click the `[INSERT_LINK]` provided by your instructor and select your name from the roster.
+3. **Launch Codespaces:** Once in your repository, click the green **Code** button, select the **Codespaces** tab, and click **Create codespace on main**.
+4. **Coding Task:** Open the blank file `lab1_3.py` and replace `pass` with:
+
+```python
+def add(x, y):
+    return x + y
+
+```
+
+4a. **Install Extensions:** To make coding easier, click the **Extensions** icon on the left sidebar (it looks like four squares), search for "Python," and ensure the official extension by Microsoft is installed. This provides features like syntax highlighting and error detection.
+
+5. **Verify:** In the terminal, run `python3 test_3.py`.
+
+---
+
+### Understanding Test Results
+
+When you run your tests, the `unittest` framework will provide feedback in the terminal. Here is how to read the output:
+
+#### ✅ What Success Looks Like
+
+If your function is written correctly, you will see a dot for every test that passed and an **OK** message.
+
+```text
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+
+```
+
+#### ❌ What Failure Looks Like
+
+If your function returns the wrong value (for example, if you subtracted instead of added), you will see an **F**, a "Traceback" showing the specific line that failed, and a **FAILED** message.
+
+```text
+..F
+======================================================================
+FAIL: test_add_positive (__main__.TestLab1_3)
+----------------------------------------------------------------------
+AssertionError: 5 != -1 : Expected 5, but got -1
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+
+```
+
 
 ### Day 4: Functions (Wednesday, 1/14)
 
