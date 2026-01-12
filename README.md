@@ -1,6 +1,6 @@
 # Lab 1: Infrastructure, Functions, and Logic
 
-Welcome to your first lab! This week is focused on setting up your development environment, understanding Python functions, and learning how to test your code.
+Welcome to your first lab! This week is focused on setting up your development environment, understanding Python functions, and applying logic to solve problems.
 
 > [!IMPORTANT]
 > **Submission Note:** The work for Days 3, 4, and 5 will be submitted together via GitHub on **Friday (1/16)**.
@@ -13,63 +13,68 @@ Welcome to your first lab! This week is focused on setting up your development e
 
 **Goal:** Get your coding environment (GitHub Codespaces) ready.
 
-1. **GitHub Account:** Create a [GitHub account](https://github.com) if you don't have one. Choose a professional username!
-2. **Join Classroom:** Click the [GitHub Classroom Link Here].
-3. **Accept Assignment:** Click accept, refresh after a moment, and click **Go to repository**.
-4. **Launch Codespaces:** Click the green **Code** button → **Codespaces** tab → **Create codespace on main**.
-5. **Coding Task:** * Open `lab1_3.py` and add this code:
-```python
-def add(x, y):
-    return x + y
-
-```
-
-
-* Run `test_3.py` to verify.
-
-
+1. **GitHub Account:** Create a [GitHub account](https://github.com) if you don't have one.
+2. **Join Classroom:** Click the [INSERT_LINK] provided by your instructor.
+3. **Launch Codespaces:** Inside your new repo, click **Code** (green button) → **Codespaces** → **Create codespace**.
+4. **Coding Task:** Open `lab1_3.py` and create a function named `add(x, y)` that returns the sum of two numbers.
+5. **Verify:** Run `python3 test_3.py` in the terminal.
 
 ### Day 4: Functions (Wednesday, 1/14)
 
-**Goal:** Practice writing individual functions.
+**Goal:** Translate requirements into working Python functions. Open `lab1_4.py` and write the following:
 
-1. Re-open your Codespace from your GitHub profile.
-2. Complete the tasks described inside `lab1_4.py`.
-3. Run `test_4.py` to verify your solution.
+| Function Name | Arguments | Description |
+| --- | --- | --- |
+| `calculate_average` | `num1, num2, num3` | Calculate the mathematical average of three different numbers. |
+| `add_tax` | `bill_total` | Given a dollar amount, return the total after adding a **10%** sales tax. |
+| `greet_user` | `name` | Accept a string and return a greeting that says "Hello" followed by that name. |
 
-### Day 5: Boolean Logic (Friday, 1/16)
+**Verify:** Run `python3 test_4.py` in the terminal.
 
-**Goal:** Learn how to write your own tests.
+### Day 5: Boolean Logic & Testing (Friday, 1/16)
 
-1. Open `lab1_5.py` and complete the logic exercises.
-2. Run `test_5.py` to verify your solution.
+**Goal:** Use conditional logic to solve more complex problems. Open `lab1_5.py` and write the following:
 
+| Function Name | Arguments | Description |
+| --- | --- | --- |
+| `check_multiple` | `number` | Return `True` if the number is a multiple of **both** 3 and 5. Otherwise, return `False`. |
+| `check_password` | `input_string` | Compare the input to a secret word of your choice. Return `"access granted"` if they match, or `"access denied"` if they don't. |
+| `calculate_federal_tax` | `salary` | Use chained conditionals to return a tax amount based on these brackets: <br>
 
+<br>• <= $11k: **10%** <br>
+
+<br>• $11k - $44,725: **12%** <br>
+
+<br>• $44,725 - $95,375: **22%** <br>
+
+<br>• Over $95,375: **24%** |
+
+**Verify:** Run `python3 test_5.py` in the terminal.
 
 ---
 
 ## 🐍 New to Python?
 
-If this is your first time working with Python files and a Command Line (Terminal), here are the basics:
-
 ### What is a `.py` file?
 
-A file ending in `.py` is a plain text file that contains instructions written in the Python programming language. Think of it like a recipe: the computer reads the file from top to bottom and executes the instructions you've written.
+A file ending in `.py` is a plain text file containing Python code. The computer reads this "script" from top to bottom. In this lab, your `.py` files contain **functions** (reusable blocks of code), while your `test_` files check if those functions work correctly.
 
-### How to run code via the Command Line
+### Running Code via the Command Line
 
-The **Terminal** (the black box at the bottom of Codespaces) is where you talk directly to the computer.
+The **Terminal** is the text interface at the bottom of your screen. To run your code or tests, you must tell the Python "interpreter" which file to read.
 
-* **To run a script:** Type `python3` followed by the filename and hit Enter.
-```bash
-python3 lab1_3.py
+* **To run your script:** ```bash
+python3 lab1_4.py
+```
 
 ```
 
 
-* **To run tests:** In this lab, we use scripts to check our work. Run them the same way:
-```bash
-python3 test_3.py
+* **To run your tests (Recommended):** ```bash
+python3 test_4.py
+```
+
+
 
 ```
 
@@ -79,11 +84,9 @@ python3 test_3.py
 
 ## 📥 Submission Instructions
 
-Once you finish Day 5, follow these steps in Codespaces to turn in your work:
+Once Day 5 is complete, use the **Source Control** (branch icon) menu in Codespaces:
 
-1. **Stage:** Click the **Source Control** icon (the branch symbol ) on the left sidebar. Hover over "Changes" and click the **+ (Plus Sign)**.
-2. **Commit:** In the text box, type a message (e.g., `Completed Lab 1`). Click **Commit**.
-3. **Push:** Click **Sync Changes** or **Push** to send your code to GitHub.
-4. **Verify:** Refresh your GitHub repository page in your browser. If you see your commit message next to the files, you are successful!
-
-**Final Check:** Confirm with your Instructor or TA that your submission was received.
+1. **Stage:** Click the **+** next to your changed files.
+2. **Commit:** Type "Completed Lab 1" in the box and click **Commit**.
+3. **Push:** Click **Sync Changes** to upload your work to GitHub.
+4. **Verify:** Go to your GitHub URL and ensure your code appears there.
